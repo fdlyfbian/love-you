@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <h1>HAI CANTIK!!</h1>
+            <img src="y/q.gif" alt="love">
+            <h1>Mau kah kamu jadi pacar aku??</h1>
+            <button id="btn_mau" onclick="alert('I LOVE YOU')">Mau</button>&nbsp;
+        <button id="btn_gamau" onclick="gamau(this)" style="position: absolute">
+             Gamau
+        </button>
+    </body>
+    <script>
+    funtion gamau(id) { 
+        var mau = document.getElementById("btn_mau");
+        var i = Math.floor(Math.random() * 300) + 1;
+        var j = Math.floor(Math.random() * 100) + mau.offsetTop;
+        id.style.left = i + "px";
+        id.style.top = j + "px";
+    }</script>
+</html>
